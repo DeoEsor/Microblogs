@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{343FB6BA-7968-4225-A5DC-FE8129CC866E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{36956070-5F1E-4B3F-BDBA-57251ECBBFBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{39ED89F9-675E-4D7F-BB31-A9685023F3F8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Packages.props = Directory.Packages.props
+		Directory.Build.props = Directory.Build.props
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".gihub", ".gihub", "{A48DC15A-3BF3-493E-B000-926701F5784B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{60E66412-DD18-40BD-87B4-B36EE8D937AB}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yaml = .github\workflows\ci.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{5A0AF5D3-77D4-49F2-A090-87318069B74A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FA0EBD17-78C4-4531-9529-C64999F5D34C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{120DF745-2BC4-4F62-A842-7F17995CA069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "e2e", "e2e", "{66155735-E9C5-4447-9119-C0AAECA95B5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{194E0DC7-6449-4B12-AF95-A59ABA08452B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrational", "Integrational", "{C5BDFC84-3D88-4331-B54C-BBC9255AEE72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60E66412-DD18-40BD-87B4-B36EE8D937AB} = {A48DC15A-3BF3-493E-B000-926701F5784B}
+		{5A0AF5D3-77D4-49F2-A090-87318069B74A} = {343FB6BA-7968-4225-A5DC-FE8129CC866E}
+		{FA0EBD17-78C4-4531-9529-C64999F5D34C} = {343FB6BA-7968-4225-A5DC-FE8129CC866E}
+		{120DF745-2BC4-4F62-A842-7F17995CA069} = {343FB6BA-7968-4225-A5DC-FE8129CC866E}
+		{66155735-E9C5-4447-9119-C0AAECA95B5F} = {36956070-5F1E-4B3F-BDBA-57251ECBBFBB}
+		{194E0DC7-6449-4B12-AF95-A59ABA08452B} = {36956070-5F1E-4B3F-BDBA-57251ECBBFBB}
+		{C5BDFC84-3D88-4331-B54C-BBC9255AEE72} = {36956070-5F1E-4B3F-BDBA-57251ECBBFBB}
+	EndGlobalSection
+EndGlobal
