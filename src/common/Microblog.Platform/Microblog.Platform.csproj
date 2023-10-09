@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+      <PackageReference Include="Dapper" />
+      <PackageReference Include="Dapper.SqlBuilder" />
+      <PackageReference Include="Elastic.Clients.Elasticsearch" />
+      <PackageReference Include="Elasticstretch.DependencyInjection" />
+      <PackageReference Include="FluentValidation" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+      <PackageReference Include="Hangfire" />
+      <PackageReference Include="KafkaFlow" />
+      <PackageReference Include="KafkaFlow.LogHandler.Console" />
+      <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" />
+      <PackageReference Include="KafkaFlow.Retry" />
+      <PackageReference Include="KafkaFlow.Serializer.ProtobufNet" />
+      <PackageReference Include="KafkaFlow.TypedHandler" />
+      <PackageReference Include="MediatR" />
+      <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" />
+      <PackageReference Include="Serilog" />
+      <PackageReference Include="Serilog.Extensions.Logging" />
+      <PackageReference Include="Serilog.Sinks.Console" />
+    </ItemGroup>
+
+</Project>

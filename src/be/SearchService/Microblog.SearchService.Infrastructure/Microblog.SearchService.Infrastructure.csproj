@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\common\Microblog.Platform\Microblog.Platform.csproj" />
+      <ProjectReference Include="..\Microblog.SearchService.Infrastructure.Abstractions\Microblog.SearchService.Infrastructure.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>
