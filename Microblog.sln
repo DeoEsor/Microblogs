@@ -37,6 +37,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{E6E3F4BE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chaos", "chaos", "{270E4582-5342-46FC-91A0-7B2FCC81400E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{1DA45FC5-D8CC-43DC-B6F2-AC46EDEA71E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.Platform", "src\common\Microblog.Platform\Microblog.Platform.csproj", "{9A658640-0E99-488F-BB91-1CD9280C797D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SearchService", "SearchService", "{9B2F62DA-3154-42A6-BA2A-196124111E6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.SearchService.Presentation", "src\be\SearchService\Microblog.SearchService.Presentation\Microblog.SearchService.Presentation.csproj", "{665115B1-B6DD-4523-8933-E1E93B61D74F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.SearchService.Domain", "src\be\SearchService\Microblog.SearchService.Domain\Microblog.SearchService.Domain.csproj", "{76DA354C-E606-47F5-BC26-3969AA7C76CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.SearchService.Application", "src\be\SearchService\Microblog.SearchService.Application\Microblog.SearchService.Application.csproj", "{39F65246-4208-4BA0-ACE6-8D4005BF1C42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalServices", "ExternalServices", "{433D54FF-57AB-41D8-B86D-C243FA429417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.SearchService.Presentation.Abstractions", "src\be\SearchService\Microblog.SearchService.Presentation.Abstractions\Microblog.SearchService.Presentation.Abstractions.csproj", "{33FED1D4-83C7-4763-AF4F-2C75A74B05F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.SearchService.Infrastructure", "src\be\SearchService\Microblog.SearchService.Infrastructure\Microblog.SearchService.Infrastructure.csproj", "{0925889F-AFDB-42FB-8C40-C2B6A055B981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microblog.SearchService.Infrastructure.Abstractions", "src\be\SearchService\Microblog.SearchService.Infrastructure.Abstractions\Microblog.SearchService.Infrastructure.Abstractions.csproj", "{C2A739B7-9993-46EA-8E75-B1F0ACE7263B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,5 +72,45 @@ Global
 		{C4F613FA-5052-49DE-B031-1D5930BCF1EB} = {343FB6BA-7968-4225-A5DC-FE8129CC866E}
 		{E6E3F4BE-A69D-45EB-9FE0-55E932657AA9} = {343FB6BA-7968-4225-A5DC-FE8129CC866E}
 		{270E4582-5342-46FC-91A0-7B2FCC81400E} = {36956070-5F1E-4B3F-BDBA-57251ECBBFBB}
+		{1DA45FC5-D8CC-43DC-B6F2-AC46EDEA71E9} = {343FB6BA-7968-4225-A5DC-FE8129CC866E}
+		{9A658640-0E99-488F-BB91-1CD9280C797D} = {1DA45FC5-D8CC-43DC-B6F2-AC46EDEA71E9}
+		{9B2F62DA-3154-42A6-BA2A-196124111E6F} = {238582D9-1BE8-4B55-9304-04B9E9D30E1D}
+		{665115B1-B6DD-4523-8933-E1E93B61D74F} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+		{76DA354C-E606-47F5-BC26-3969AA7C76CD} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+		{39F65246-4208-4BA0-ACE6-8D4005BF1C42} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+		{433D54FF-57AB-41D8-B86D-C243FA429417} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+		{33FED1D4-83C7-4763-AF4F-2C75A74B05F5} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+		{0925889F-AFDB-42FB-8C40-C2B6A055B981} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+		{C2A739B7-9993-46EA-8E75-B1F0ACE7263B} = {9B2F62DA-3154-42A6-BA2A-196124111E6F}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A658640-0E99-488F-BB91-1CD9280C797D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A658640-0E99-488F-BB91-1CD9280C797D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A658640-0E99-488F-BB91-1CD9280C797D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A658640-0E99-488F-BB91-1CD9280C797D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{665115B1-B6DD-4523-8933-E1E93B61D74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665115B1-B6DD-4523-8933-E1E93B61D74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665115B1-B6DD-4523-8933-E1E93B61D74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665115B1-B6DD-4523-8933-E1E93B61D74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DA354C-E606-47F5-BC26-3969AA7C76CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DA354C-E606-47F5-BC26-3969AA7C76CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DA354C-E606-47F5-BC26-3969AA7C76CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DA354C-E606-47F5-BC26-3969AA7C76CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F65246-4208-4BA0-ACE6-8D4005BF1C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F65246-4208-4BA0-ACE6-8D4005BF1C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F65246-4208-4BA0-ACE6-8D4005BF1C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F65246-4208-4BA0-ACE6-8D4005BF1C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33FED1D4-83C7-4763-AF4F-2C75A74B05F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FED1D4-83C7-4763-AF4F-2C75A74B05F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FED1D4-83C7-4763-AF4F-2C75A74B05F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FED1D4-83C7-4763-AF4F-2C75A74B05F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0925889F-AFDB-42FB-8C40-C2B6A055B981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0925889F-AFDB-42FB-8C40-C2B6A055B981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0925889F-AFDB-42FB-8C40-C2B6A055B981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0925889F-AFDB-42FB-8C40-C2B6A055B981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A739B7-9993-46EA-8E75-B1F0ACE7263B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A739B7-9993-46EA-8E75-B1F0ACE7263B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A739B7-9993-46EA-8E75-B1F0ACE7263B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A739B7-9993-46EA-8E75-B1F0ACE7263B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

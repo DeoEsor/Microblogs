@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "Microblog.SearchService.Presentation.Abstractions";
+
+import "google/protobuf/timestamp.proto";
+
+package search_service;
+
+service SearchService {
+  rpc Search(SearchQuery) returns (SearchQueryResponse);
+}
+
+message SearchQuery {
+    string Topic = 1;
+    string MessageContent = 2;
+    google.protobuf.Timestamp  PostedAfter = 3;
+    google.protobuf.Timestamp  PostedBefore = 4;
+    string FromUser = 5;
+    int32 Skip = 6;
+    int32 Limit = 7;
+}
+
+message SearchQueryResponse {
+  repeated Tweet tweets = 1;
+}
+
+message Tweet {
+  string Id = 1;
+  string UserId = 2;
+  google.protobuf.Timestamp  PostDate = 3;
+  string Message = 4;
+}
